@@ -1,0 +1,78 @@
+# functions
+// Addition of two numbers //
+ function f1(x,y){
+     var z=x+y;
+     return z;
+ }
+
+  var output1 = f1(2,3);
+  console.log(output1);
+  
+  output: 5
+  
+
+// multiplication of two numbers //
+
+  function f3(a,b){
+     var c=a*b;
+     return c;
+ }
+
+ var output2 = f3(2,3);
+ console.log(output2);
+ 
+ output: 6
+
+ // to print even numbers or odd numbers //
+
+function numbers(x,y){
+    for( i=x;i<y;i++){
+        if(i%2==0){
+        console.log("even numbers:",i);
+        }
+        if(i%2!==0){
+        console.log("oddnumbers:",i);
+        }
+    }
+}
+numbers(1,10);
+
+output:
+          oddnumbers: 1  
+          even numbers: 2
+          oddnumbers: 3  
+          even numbers: 4
+          oddnumbers: 5  
+          even numbers: 6
+          oddnumbers: 7  
+          even numbers: 8
+          oddnumbers: 9  
+
+//program to count even or odd numbers //
+
+function countNumbers(arr) {
+    var evenCount = 0;
+    var oddCount = 0;
+  
+    for (var index = 0; index < arr.length; index++) {
+      if (arr[index] % 2 === 0) {
+        evenCount++;
+      } else {
+        oddCount++;
+      }
+    }
+  
+    console.log("Count of even numbers:", evenCount);
+    console.log("Count of odd numbers:", oddCount);
+  
+    return evenCount; // or return oddCount;
+  }
+  
+  var inputArr = [2, 7, 9];
+  var count = countNumbers(inputArr);
+  
+  output:
+          Count of even numbers: 1
+          Count of odd numbers: 2
+  
+  
