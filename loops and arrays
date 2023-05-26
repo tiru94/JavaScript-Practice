@@ -1,0 +1,105 @@
+ for loop is used to iterate apart of the program several times.
+
+ program to print 1 to 10 numbers
+
+for(i=2;i<=6;i++){
+   console.log(i);
+ }
+// in the above program i=2 intailize.
+//  here condition  i<=6 (2<=6)(2 is less than or equal to 6) then condition is  true. then it print  o to 6 numbers.
+//   i++ is a shorthand notation for incrementing the value of i by 1. 
+//                    It is equivalent to writing i=0
+//                                                i=0+1
+//                                                i=0+2
+//                                                i=0+3
+
+
+
+// program  to print negative numbers
+
+for(i=0;i>-5;i--){
+   console.log(i);
+
+ }
+
+// to print divisible by 5 and 2
+
+for(i=1;i<100;i++){
+ if(i % 5==0 ){
+   console.log(i)
+ }
+ }
+
+// program to print numbers reverse
+
+for(i=10;i>0;i--){
+   console.log(i);
+}
+
+// program to print even numbers
+
+for(i=0;i<20;i++){
+    if(i%2==0){
+        console.log("odd numbers");
+    }
+    else{
+        console.log("even numbers");
+    }
+}
+
+
+for ( i = 0; i <100; i++) {
+
+i++
+}
+
+console.log("count:" +i);
+
+
+
+for(i=10;i>0;i--){
+ console.log(i);
+}
+
+for(i=0;i<10;i+=2){
+ console.log(i);
+}
+
+//arrays
+
+var arr = [15,6,7,9]
+for(i=0;i<arr.length;i++){
+    if(arr[i]%5==0){
+    console.log(arr[i]);
+}
+}
+
+
+//program to print  negative numbers
+var arr =[-6,7,0,1,3,-5,-8]
+for(i=0;i<arr.length;i++)
+if(arr[i]<0)
+{
+   console.log(arr[i] );
+
+}
+
+// program to print  positive  numbers
+var arr1 = [-6, 7, 0, 1, 3, -5, -8];
+
+for (var i = 0; i < arr1.length; i++) {
+    if (arr1[i] > 0) {
+      console.log(arr1[i]);
+    }
+  }
+
+// replace with negative number
+var arr1 = [-6, 7, 0, 1, 3, -5, -8];
+
+for (var i = 0; i < arr1.length; i++) {
+  if (arr1[i] < 0) {
+    arr1[i] = 0;
+  }
+}
+
+console.log(arr1);
